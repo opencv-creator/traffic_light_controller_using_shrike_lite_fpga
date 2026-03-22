@@ -1,0 +1,43 @@
+
+
+####   Resource Utilization Report   ####
+
+    Top level module name: traffic_fsm
+
+    Resource usage:
+      15 Logic 6-LUT CLBs
+           59 CLB LUTs utilized (up to 4 per CLB)
+                 6 of which are 6-input LUTs
+                27 of which are dual 5-input LUTs
+                86 LUTs total
+           42 CLB FFs utilized (up to 4 pairs per CLB)
+                42 of which are LUT-FF combination
+                 3 of which are dual-FFs
+                 2 of which are dual-LUT-dual-FF combination
+                45 FFs total
+      15 I/O CLBs
+            1  Input pins
+           27 Output pins
+           13 Output FFs utilized
+       1 Clock
+           Clock 0: net    17, clk, Fanout: 28 CLBs
+           Total 1 unique clocks
+    need 0 DSP and 1 Logic-Memory FPGA 1K Tiles.
+
+ 
+####   Resource Utilization Complete   ####
+
+TILE-REQ:		0		0		0		1
+
+### Total FPGA resources from current floorplan: ###
+                       184 IOBs
+                       140 Logic 6-LUT CLBs
+                              40 CLBs support RAM/SR
+
+Usage of Logic CLBs is 10.7%.
+    Logic-Memory CLB for RAM/Shift-Register is 0.0%.
+Usage of LUTs is 10.5%.
+    dual-LUTs is 4.8%.
+Usage of FF is 7.5%.
+    dual-FF is 0.5%.
+Usage of IO CLB is 8.2%.

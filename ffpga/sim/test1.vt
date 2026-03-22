@@ -1,0 +1,53 @@
+// Custom testbench
+
+`timescale 1ns / 1ps
+
+module testbench_tb;
+
+reg clk,reset;
+
+wire osc_en,E_red,E_yellow,E_green,S_red,S_yellow,S_green,W_red,W_yellow,W_green,N_red,N_yellow,N_green,E_red_en,
+    E_yellow_en,E_green_en,S_red_en,S_yellow_en,S_green_en,W_red_en,W_yellow_en,W_green_en,N_red_en,N_yellow_en,
+    N_green_en,pulse,pulse_en;
+
+  traffic_fsm uut(clk,reset,osc_en,E_red,E_yellow,E_green,S_red,S_yellow,S_green,W_red,W_yellow,W_green,N_red,N_yellow,N_green,E_red_en,
+    E_yellow_en,E_green_en,S_red_en,S_yellow_en,S_green_en,W_red_en,W_yellow_en,W_green_en,N_red_en,N_yellow_en,
+    N_green_en,pulse,pulse_en);
+    
+    initial
+    begin
+    clk = 1'b0;
+    reset = 1'b0;
+    end
+    
+    
+    always
+    #1 clk = ~clk;
+
+  initial begin
+
+    $dumpfile ("testbench_tb.vcd");
+    $dumpvars (0, testbench_tb);
+    
+    #10;
+    reset = 1'b1;
+    
+    #10;
+    reset = 1'b0;
+    
+    
+    
+    #10000;
+    
+    
+  
+
+    $finish;
+    
+    
+    
+    
+    
+  end
+
+endmodule

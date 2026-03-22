@@ -1,0 +1,23 @@
+
+8. Printing statistics.
+
+=== traffic_fsm ===
+
+   Number of wires:                153
+   Number of wire bits:            246
+   Number of public wires:         153
+   Number of public wire bits:     246
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                111
+     CARRY4                         11
+     FDRE                           51
+     FDSE                            5
+     INV                             5
+     LUT2                           11
+     LUT3                            5
+     LUT4                            6
+     LUT5                           11
+     LUT6                            6
+
